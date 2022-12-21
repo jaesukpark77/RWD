@@ -206,7 +206,6 @@ input[type="search"] {
 }
 
 /* 공통 게시판 */
-/* 공통 게시판 */
 .board {
   grid-area: board;
   display: flex;
@@ -291,6 +290,17 @@ input[type="search"] {
 .twitter__date {
   display: block;
   margin-top: var(--spacing-xs);
+}
+
+/* 공통 푸터 */
+.appFooter{
+  background: var(--primary-color);
+  color: var(--white);
+  padding: var(--spacing-base) var(--spacing-lg);
+}
+
+.address {
+  margin-bottom: var(--spacing-base);
 }
 
 /* 모바일 디바이스 (Mobile Device) */
@@ -423,6 +433,17 @@ input[type="search"] {
     font-size:var(--text-sm);
     margin-left:var(--spacing-xs);
   }
+
+  /* 모바일 푸터 */
+  .appFooter{
+    font-size:var(--text-sm);
+  }
+
+  /* 모바일 주소 */
+  .address{
+    display:flex;
+    flex-flow:column nowrap;
+  }
 }
 
 /* 테블릿 디바이스 (Tablet Device) */
@@ -533,6 +554,11 @@ input[type="search"] {
       "news news news news news news news news news news news news"
       "book book book book twitter twitter twitter twitter twitter favorite favorite favorite"
       "book book book book . board board board board board board board";
+  }
+
+  /* 데스크탑 푸터 */
+  .appFooter{
+    text-align:center;
   }
 }
 
